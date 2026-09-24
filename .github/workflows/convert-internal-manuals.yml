@@ -1,0 +1,34 @@
+name: Convert internal manuals to Markdown
+
+on:
+  push:
+    paths:
+      - "content/internal/_incoming/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install MarkItDown
+        run: pip install "markitdown[all]"
+
+      - name: Convert new manuals
+        run: node scripts/convert-internal-manuals.mjs
+
+      - name: Commit changes
+        run: |
+          git config user.name "training-bot"
+          git config user.email "training-bot@users.noreply.github.com"
+          git add content/internal catalog/internal-docs.json
+          git diff --cached --quiet || git commit -m "chore: convert internal manuals to markdown modules"
+          git push

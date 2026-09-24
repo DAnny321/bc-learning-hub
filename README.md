@@ -7,19 +7,31 @@ Piattaforma di formazione mirata per risorse Business Central, **100% GitHub-nat
 - I dati (persone, progetti, catalogo corsi) sono file JSON versionati in git → tracciabilità gratuita via storico commit/issue.
 - Le **scritture** (competenze progetto, assegnazione corso, completamento corso) avvengono aprendo una Issue con un template dedicato (`.github/ISSUE_TEMPLATE/`). Una GitHub Action legge l'issue, aggiorna il file JSON corretto, commenta e chiude l'issue.
 - Il **catalogo Microsoft Learn** viene sincronizzato automaticamente ogni settimana (`.github/workflows/sync-learn-catalog.yml`) tramite la Microsoft Learn Catalog API pubblica.
+- I **manuali interni** (Word/Excel/PowerPoint/PDF) si convertono automaticamente in moduli Markdown: basta trascinarli in `content/internal/_incoming/` (vedi sezione dedicata sotto).
 - La **dashboard statica** (`site/`) viene rigenerata a ogni push su `main` e pubblicata su GitHub Pages.
 
 ## Struttura
 
 ```
-catalog/           catalogo corsi (Learn, moduli interni, Applied Skills)
-content/internal/  manuali interni migrati da DevOps, come moduli formativi + quiz
-projects/          un file JSON per progetto: competenze richieste
-people/            un file JSON per risorsa: corsi assegnati/completati
-scripts/           script Node usati dalle GitHub Action (nessuna dipendenza esterna)
-site/              dashboard statica (HTML/JS vanilla) pubblicata su GitHub Pages
-.github/           Issue Form + workflow di automazione
+catalog/                     catalogo corsi (Learn, moduli interni, Applied Skills)
+content/internal/_incoming/  drop-zone: trascina qui i manuali Word/Excel/PDF originali
+content/internal/_originals/ archivio degli originali dopo la conversione
+content/internal/<modulo>/   modulo generato: module.md + quiz.json
+projects/                    un file JSON per progetto: competenze richieste
+people/                      un file JSON per risorsa: corsi assegnati/completati
+scripts/                     script Node usati dalle GitHub Action
+site/                        dashboard statica (HTML/JS vanilla) pubblicata su GitHub Pages
+.github/                     Issue Form + workflow di automazione
 ```
+
+## Come aggiungere un manuale interno (Word/Excel/PowerPoint/PDF)
+
+1. Vai su `content/internal/_incoming/` nel repo, **Add file → Upload files**, e trascina il manuale (`.docx`, `.xlsx`, `.pptx`, `.pdf`).
+2. Il push attiva `.github/workflows/convert-internal-manuals.yml`, che usa [MarkItDown](https://github.com/microsoft/markitdown) (tool open source Microsoft) per convertirlo in Markdown.
+3. Il workflow crea automaticamente `content/internal/<modulo>/module.md`, uno stub di `quiz.json` da rifinire, aggiorna `catalog/internal-docs.json` e sposta l'originale in `content/internal/_originals/`.
+4. Rifinisci il testo generato e le domande del quiz con una normale pull request.
+
+Formati legacy (`.doc`/`.xls`/`.ppt`) non sono supportati: risalva prima nel formato moderno equivalente.
 
 ## Come segnalare/assegnare formazione
 
