@@ -1,0 +1,15 @@
+{
+  "moduleId": "provision-and-operation-management-v2-4",
+  "passScore": 70,
+  "questions": [
+    {
+      "question": "TODO: sostituisci con una domanda reale sul contenuto del modulo.",
+      "options": [
+        "Opzione A",
+        "Opzione B",
+        "Opzione C"
+      ],
+      "correctIndex": 0
+    }
+  ]
+}

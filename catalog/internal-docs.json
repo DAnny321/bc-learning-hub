@@ -5,5 +5,12 @@
     "path": "content/internal/example-extension/module.md",
     "quiz": "content/internal/example-extension/quiz.json",
     "durationMinutes": 20
+  },
+  {
+    "id": "provision-and-operation-management-v2-4",
+    "title": "Introduzione",
+    "path": "content/internal/provision-and-operation-management-v2-4/module.md",
+    "quiz": "content/internal/provision-and-operation-management-v2-4/quiz.json",
+    "durationMinutes": 52
   }
 ]
