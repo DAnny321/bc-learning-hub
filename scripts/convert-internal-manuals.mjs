@@ -25,11 +25,6 @@ function slugify(text) {
   );
 }
 
-function titleFromMarkdown(markdown, fallback) {
-  const headingMatch = markdown.match(/^#\s+(.+)$/m);
-  return headingMatch ? headingMatch[1].trim() : fallback;
-}
-
 function estimateDurationMinutes(markdown) {
   const wordCount = markdown.split(/\s+/).filter(Boolean).length;
   return Math.max(5, Math.round(wordCount / WORDS_PER_MINUTE));
@@ -71,7 +66,9 @@ for (const fileName of files) {
   console.log(`Conversione ${fileName} -> ${moduleDir}/module.md ...`);
   const markdown = execFileSync('markitdown', [sourcePath], { encoding: 'utf8' });
 
-  const title = titleFromMarkdown(markdown, fallbackTitle);
+  // Il titolo del manuale (es. copertina) di solito non è in stile Heading 1 in Word,
+  // quindi il nome file scelto dall'autore è una fonte più affidabile del primo '#' estratto.
+  const title = fallbackTitle;
   const modulePath = join(moduleDir, 'module.md');
   writeFileSync(modulePath, markdown.trimEnd() + '\n');
 

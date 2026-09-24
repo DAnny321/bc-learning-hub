@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T08:28:05.794Z",
+  "generatedAt": "2026-09-24T08:45:02.666Z",
   "people": [
     {
       "id": "mario-rossi",
@@ -5171,6 +5171,13 @@
         "path": "content/internal/example-extension/module.md",
         "quiz": "content/internal/example-extension/quiz.json",
         "durationMinutes": 20
+      },
+      {
+        "id": "provision-and-operation-management-v2-4",
+        "title": "Provision and Operation Management v2.4",
+        "path": "content/internal/provision-and-operation-management-v2-4/module.md",
+        "quiz": "content/internal/provision-and-operation-management-v2-4/quiz.json",
+        "durationMinutes": 52
       }
     ],
     "appliedSkills": [
