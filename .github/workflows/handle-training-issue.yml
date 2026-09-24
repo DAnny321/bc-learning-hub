@@ -1,0 +1,49 @@
+name: Handle training issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  process:
+    if: contains(github.event.issue.labels.*.name, 'type:project-skills') || contains(github.event.issue.labels.*.name, 'type:assign-course') || contains(github.event.issue.labels.*.name, 'type:complete-course')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply issue update
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: node scripts/apply-issue-update.mjs
+
+      - name: Commit changes
+        run: |
+          git config user.name "training-bot"
+          git config user.email "training-bot@users.noreply.github.com"
+          git add people projects
+          git diff --cached --quiet || git commit -m "chore: update training data from issue #${{ github.event.issue.number }}"
+          git push
+
+      - name: Comment and close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '✅ Dati aggiornati automaticamente. Grazie!'
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });

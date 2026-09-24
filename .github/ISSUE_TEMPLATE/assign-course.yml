@@ -1,0 +1,34 @@
+name: "📚 Assegna corso a risorsa"
+description: "Il PM assegna un corso specifico a una risorsa"
+title: "[Assegna corso] "
+labels: ["type:assign-course"]
+body:
+  - type: input
+    id: resource
+    attributes:
+      label: Risorsa
+      description: Nome della persona a cui assegnare il corso
+      placeholder: "Mario Rossi"
+    validations:
+      required: true
+  - type: input
+    id: course
+    attributes:
+      label: Corso (id o URL)
+      description: ID del catalogo interno oppure URL Microsoft Learn/Applied Skills
+      placeholder: "https://learn.microsoft.com/... oppure example-extension-intro"
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Progetto collegato (opzionale)
+      placeholder: "Progetto Cliente X"
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Note
+    validations:
+      required: false

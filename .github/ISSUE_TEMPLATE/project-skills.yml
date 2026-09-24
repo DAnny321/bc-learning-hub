@@ -1,0 +1,27 @@
+name: "🏷️ Competenze richieste progetto"
+description: "Il PM segnala le competenze/tecnologie richieste da un progetto"
+title: "[Competenze] "
+labels: ["type:project-skills"]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Nome progetto
+      description: Nome o codice del progetto
+      placeholder: "Progetto Cliente X"
+    validations:
+      required: true
+  - type: textarea
+    id: skills
+    attributes:
+      label: Competenze richieste
+      description: Elenco separato da virgola (es. al-development, warehouse-management)
+      placeholder: "al-development, warehouse-management"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Note
+    validations:
+      required: false

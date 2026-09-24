@@ -1,0 +1,9 @@
+[
+  {
+    "id": "example-extension-intro",
+    "title": "Introduzione all'estensione di esempio",
+    "path": "content/internal/example-extension/module.md",
+    "quiz": "content/internal/example-extension/quiz.json",
+    "durationMinutes": 20
+  }
+]

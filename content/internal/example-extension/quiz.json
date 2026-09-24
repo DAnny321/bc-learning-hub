@@ -1,0 +1,16 @@
+{
+  "moduleId": "example-extension-intro",
+  "passScore": 70,
+  "questions": [
+    {
+      "question": "Qual è lo scopo principale dell'estensione di esempio?",
+      "options": ["Gestione crediti", "Gestione magazzino", "Reportistica HR"],
+      "correctIndex": 0
+    },
+    {
+      "question": "Dove viene registrato il completamento del modulo?",
+      "options": ["In un'email al PM", "In una issue GitHub con template dedicato", "In un file Excel condiviso"],
+      "correctIndex": 1
+    }
+  ]
+}

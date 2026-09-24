@@ -1,0 +1,47 @@
+name: "✅ Segna completamento corso"
+description: "La risorsa registra il completamento di un corso"
+title: "[Completamento] "
+labels: ["type:complete-course"]
+body:
+  - type: input
+    id: resource
+    attributes:
+      label: Risorsa
+      placeholder: "Mario Rossi"
+    validations:
+      required: true
+  - type: input
+    id: course
+    attributes:
+      label: Corso (id o URL)
+      placeholder: "example-extension-intro"
+    validations:
+      required: true
+  - type: input
+    id: hours
+    attributes:
+      label: Ore dedicate
+      placeholder: "2"
+    validations:
+      required: true
+  - type: input
+    id: completed-on
+    attributes:
+      label: Data completamento
+      placeholder: "2026-09-24"
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Evidenza esterna (badge/transcript Learn o Applied Skills)
+      placeholder: "https://learn.microsoft.com/api/profiles/..."
+    validations:
+      required: false
+  - type: input
+    id: quiz-score
+    attributes:
+      label: Punteggio quiz (solo per moduli interni)
+      placeholder: "80"
+    validations:
+      required: false

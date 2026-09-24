@@ -1,0 +1,13 @@
+{
+  "id": "example-project",
+  "name": "Progetto Esempio Cliente X",
+  "requiredSkills": ["al-development", "warehouse-management"],
+  "history": [
+    {
+      "action": "seed",
+      "by": "setup",
+      "at": "2026-09-24T00:00:00Z",
+      "notes": "Progetto di esempio creato durante lo scaffold iniziale."
+    }
+  ]
+}

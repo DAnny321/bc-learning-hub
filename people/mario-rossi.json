@@ -1,0 +1,15 @@
+{
+  "id": "mario-rossi",
+  "displayName": "Mario Rossi",
+  "role": "developer",
+  "assignedCourses": [
+    {
+      "course": "example-extension-intro",
+      "project": "example-project",
+      "assignedBy": "setup",
+      "assignedAt": "2026-09-24T00:00:00Z",
+      "notes": "Esempio di assegnazione creato durante lo scaffold iniziale."
+    }
+  ],
+  "completedCourses": []
+}
