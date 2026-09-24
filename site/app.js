@@ -44,6 +44,8 @@ function renderLearnCatalog(modules) {
     </tr>`).join('') || '<tr><td colspan="4" class="muted">Catalogo non ancora sincronizzato.</td></tr>';
 }
 
+const REPO_BLOB_BASE = 'https://github.com/DAnny321/bc-learning-hub/blob/main/';
+
 function renderInternalCatalog(docs) {
   const tbody = document.querySelector('#internal-catalog tbody');
   tbody.innerHTML = docs.map((d) => `
@@ -51,7 +53,8 @@ function renderInternalCatalog(docs) {
       <td>${escapeHtml(d.title)}</td>
       <td>${d.durationMinutes ?? '-'} min</td>
       <td>${d.quiz ? 'sì' : 'no'}</td>
-    </tr>`).join('') || '<tr><td colspan="3" class="muted">Nessun modulo interno censito.</td></tr>';
+      <td>${d.path ? `<a href="${REPO_BLOB_BASE}${d.path}" target="_blank" rel="noopener">apri</a>` : '-'}</td>
+    </tr>`).join('') || '<tr><td colspan="4" class="muted">Nessun modulo interno censito.</td></tr>';
 }
 
 function renderAppliedSkills(items) {
