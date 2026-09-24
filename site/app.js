@@ -53,7 +53,7 @@ function renderInternalCatalog(docs) {
       <td>${escapeHtml(d.title)}</td>
       <td>${d.durationMinutes ?? '-'} min</td>
       <td>${d.quiz ? 'sì' : 'no'}</td>
-      <td>${d.path ? `<a href="${REPO_BLOB_BASE}${d.path}" target="_blank" rel="noopener">apri</a>` : '-'}</td>
+      <td>${d.id ? `<a href="module.html?id=${encodeURIComponent(d.id)}">apri corso</a>` : '-'}</td>
     </tr>`).join('') || '<tr><td colspan="4" class="muted">Nessun modulo interno censito.</td></tr>';
 }
 

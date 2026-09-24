@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 function readJsonDir(dir) {
@@ -26,4 +26,18 @@ const dataset = {
 };
 
 writeFileSync('site/data.json', JSON.stringify(dataset, null, 2) + '\n');
+
+// Pubblica i contenuti dei moduli (markdown + quiz) dentro site/, cosi' il
+// visualizzatore in-app puo' leggerli una volta deployati su GitHub Pages.
+const SITE_CONTENT_DIR = 'site/content/internal';
+rmSync(SITE_CONTENT_DIR, { recursive: true, force: true });
+mkdirSync(SITE_CONTENT_DIR, { recursive: true });
+if (existsSync('content/internal')) {
+  for (const entry of readdirSync('content/internal', { withFileTypes: true })) {
+    if (entry.isDirectory() && !entry.name.startsWith('_')) {
+      cpSync(join('content/internal', entry.name), join(SITE_CONTENT_DIR, entry.name), { recursive: true });
+    }
+  }
+}
+
 console.log(`Dashboard data built: ${people.length} people, ${projects.length} projects.`);

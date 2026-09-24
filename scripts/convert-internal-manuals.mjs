@@ -30,6 +30,15 @@ function estimateDurationMinutes(markdown) {
   return Math.max(5, Math.round(wordCount / WORDS_PER_MINUTE));
 }
 
+// MarkItDown a volte non riesce a incorporare un'immagine (es. loghi in formati
+// vettoriali non supportati) e lascia un riferimento non valido tipo
+// '![alt](data:image/png;base64...)' con i tre puntini letterali invece dei dati reali.
+function cleanBrokenImagePlaceholders(markdown) {
+  return markdown.replace(/!\[([^\]]*)\]\(data:image\/[a-zA-Z0-9.+-]+;base64\.\.\.\)/g, (_match, alt) =>
+    alt ? `_[immagine non convertita: ${alt}]_` : '_[immagine non convertita]_',
+  );
+}
+
 function readCatalog() {
   return existsSync(CATALOG_PATH) ? JSON.parse(readFileSync(CATALOG_PATH, 'utf8')) : [];
 }
@@ -64,7 +73,8 @@ for (const fileName of files) {
   mkdirSync(moduleDir, { recursive: true });
 
   console.log(`Conversione ${fileName} -> ${moduleDir}/module.md ...`);
-  const markdown = execFileSync('markitdown', [sourcePath], { encoding: 'utf8' });
+  const rawMarkdown = execFileSync('markitdown', [sourcePath], { encoding: 'utf8' });
+  const markdown = cleanBrokenImagePlaceholders(rawMarkdown);
 
   // Il titolo del manuale (es. copertina) di solito non è in stile Heading 1 in Word,
   // quindi il nome file scelto dall'autore è una fonte più affidabile del primo '#' estratto.
