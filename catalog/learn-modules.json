@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-28T03:26:47.442Z",
+  "syncedAt": "2026-10-05T03:29:00.728Z",
   "modules": [
     {
       "uid": "learn-dynamics.get-started-shopify-dynamics-365-business-central",
@@ -602,7 +602,7 @@
     },
     {
       "uid": "learn-dynamics.use-model-driven-apps-common-data-service",
-      "title": "Uso di app basate su modello e di Dataverse con Business Central",
+      "title": "Usa app basate su modello e Dataverse con Business Central",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/use-model-driven-apps-common-data-service/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 83,
@@ -1520,7 +1520,7 @@
     },
     {
       "uid": "learn-dynamics.users-security-dynamics-365-business-central",
-      "title": "Gestione degli utenti e implementazione della sicurezza in Dynamics 365 Business Central",
+      "title": "Gestione degli utenti e implementazione della sicurezza in archiviazione su disco",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/users-security-dynamics-365-business-central/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 96,
@@ -2255,7 +2255,7 @@
       "title": "Invio e ricezione di documenti elettronici in archiviazione su disco",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/electronic-documents-dynamics-365-business-central/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 25,
+      "durationMinutes": 27,
       "levels": [
         "intermediate"
       ],
@@ -2640,7 +2640,7 @@
       "title": "Analisi dei dati dell'elenco usando la modalità di analisi dei dati in Business Central",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/analyze-list-data/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 35,
+      "durationMinutes": 36,
       "levels": [
         "intermediate"
       ],
@@ -4750,7 +4750,7 @@
       "title": "Elaborare le operazioni finanziarie in Business Central",
       "type": "learningPath",
       "url": "https://learn.microsoft.com/it-it/training/paths/process-financial-operations-business-central/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 459,
+      "durationMinutes": 460,
       "levels": [
         "intermediate"
       ],
@@ -4775,7 +4775,7 @@
       "title": "Creazione di report per Microsoft Dynamics 365 Business Central",
       "type": "learningPath",
       "url": "https://learn.microsoft.com/it-it/training/paths/build-reports/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 478,
+      "durationMinutes": 479,
       "levels": [
         "intermediate"
       ],
@@ -5067,7 +5067,7 @@
       "title": "Registrazione di fatture di vendita e acquisto in Microsoft archiviazione su disco",
       "type": "learningPath",
       "url": "https://learn.microsoft.com/it-it/training/paths/post-sales-purchase-invoices-dynamics-365-business-central/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 219,
+      "durationMinutes": 221,
       "levels": [
         "intermediate"
       ],
