@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-05T03:29:00.728Z",
+  "syncedAt": "2026-10-12T03:34:52.351Z",
   "modules": [
     {
       "uid": "learn-dynamics.get-started-shopify-dynamics-365-business-central",
@@ -293,7 +293,7 @@
       "title": "Controllo dell'inventario in più ubicazioni in archiviazione su disco",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/control-inventory-multiple-locations/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 26,
+      "durationMinutes": 28,
       "levels": [
         "intermediate"
       ],
@@ -419,10 +419,10 @@
     },
     {
       "uid": "learn-dynamics.currencies-exchange-rates-dynamics-365-business-central",
-      "title": "Impostazione di valute e tassi di cambio in Dynamics 365 Business Central",
+      "title": "Impostazione di valute e tassi di cambio in archiviazione su disco",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/currencies-exchange-rates-dynamics-365-business-central/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 33,
+      "durationMinutes": 43,
       "levels": [
         "intermediate"
       ],
@@ -1465,7 +1465,7 @@
     },
     {
       "uid": "learn-dynamics.budget-fixed-assets",
-      "title": "Impostazione del budget per i cespiti in Dynamics 365 Business Central",
+      "title": "Impostazione del budget per i cespiti in archiviazione su disco",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/budget-fixed-assets/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 42,
@@ -1702,7 +1702,7 @@
     },
     {
       "uid": "learn-dynamics.setup-returns-management-dynamics-365-business-central",
-      "title": "Impostazione della gestione dei resi in Dynamics 365 Business Central",
+      "title": "Impostazione della gestione dei resi in archiviazione su disco",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/setup-returns-management-dynamics-365-business-central/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 26,
@@ -2003,7 +2003,7 @@
     },
     {
       "uid": "learn-dynamics.close-fiscal-year-dynamics-365-business-central",
-      "title": "Chiusura dell'anno fiscale in Dynamics 365 Business Central",
+      "title": "Chiusura dell'anno fiscale in archiviazione su disco",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/close-fiscal-year-dynamics-365-business-central/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 57,
@@ -2762,7 +2762,7 @@
     },
     {
       "uid": "learn-dynamics.bring-app-appsource",
-      "title": "Comprensione del processo di importazione di un'app in AppSource in Business Central",
+      "title": "Comprensione del processo di pubblicazione di un'app in AppSource in Business Central",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/bring-app-appsource/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 45,
@@ -4194,7 +4194,7 @@
       "title": "Gestione di una società con più ubicazioni in Microsoft Dynamics 365 Business Central",
       "type": "learningPath",
       "url": "https://learn.microsoft.com/it-it/training/paths/manage-multiple-locations/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 156,
+      "durationMinutes": 158,
       "levels": [
         "intermediate"
       ],
@@ -4524,7 +4524,7 @@
       "title": "Uso di più valute in Microsoft Dynamics 365 Business Central",
       "type": "learningPath",
       "url": "https://learn.microsoft.com/it-it/training/paths/use-multiple-currencies-dynamics-365-business-central/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 188,
+      "durationMinutes": 198,
       "levels": [
         "intermediate"
       ],
@@ -4667,7 +4667,7 @@
       "title": "Configurare le vendite e gli acquisti in Business Central",
       "type": "learningPath",
       "url": "https://learn.microsoft.com/it-it/training/paths/configure-sales-purchasing-business-central/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 354,
+      "durationMinutes": 356,
       "levels": [
         "intermediate"
       ],
@@ -4919,7 +4919,7 @@
       "title": "Configurare i dati finanziari in Business Central",
       "type": "learningPath",
       "url": "https://learn.microsoft.com/it-it/training/paths/configure-financials-business-central/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 653,
+      "durationMinutes": 663,
       "levels": [
         "intermediate"
       ],
