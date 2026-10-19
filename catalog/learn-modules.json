@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-12T03:34:52.351Z",
+  "syncedAt": "2026-10-19T03:23:31.224Z",
   "modules": [
     {
       "uid": "learn-dynamics.get-started-shopify-dynamics-365-business-central",
@@ -2762,7 +2762,7 @@
     },
     {
       "uid": "learn-dynamics.bring-app-appsource",
-      "title": "Comprensione del processo di pubblicazione di un'app in AppSource in Business Central",
+      "title": "Comprensione del processo di importazione di un'app in AppSource in Business Central",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/bring-app-appsource/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 45,
