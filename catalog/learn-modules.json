@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-19T03:23:31.224Z",
+  "syncedAt": "2026-10-26T03:25:06.128Z",
   "modules": [
     {
       "uid": "learn-dynamics.get-started-shopify-dynamics-365-business-central",
@@ -3179,10 +3179,10 @@
     },
     {
       "uid": "learn-dynamics.manage-production-orders",
-      "title": "Gestione degli ordini di produzione in Dynamics 365 Business Central",
+      "title": "Gestione degli ordini di produzione in archiviazione su disco",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/manage-production-orders/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 102,
+      "durationMinutes": 101,
       "levels": [
         "intermediate"
       ],
@@ -4114,7 +4114,7 @@
       "title": "Introduzione alla produzione in Microsoft Dynamics 365 Business Central",
       "type": "learningPath",
       "url": "https://learn.microsoft.com/it-it/training/paths/get-started-manufacturing-business-central/?WT.mc_id=api_CatalogApi",
-      "durationMinutes": 268,
+      "durationMinutes": 267,
       "levels": [
         "intermediate"
       ],
