@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-26T03:25:06.128Z",
+  "syncedAt": "2026-11-02T03:16:08.383Z",
   "modules": [
     {
       "uid": "learn-dynamics.get-started-shopify-dynamics-365-business-central",
@@ -2679,7 +2679,7 @@
     },
     {
       "uid": "learn-dynamics.admin-online-dynamics-365-business-central",
-      "title": "Amministrazione di Dynamics 365 Business Central Online",
+      "title": "Amministrazione di archiviazione su disco Online",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/admin-online-dynamics-365-business-central/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 153,
