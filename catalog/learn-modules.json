@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-02T03:16:08.383Z",
+  "syncedAt": "2026-11-09T11:13:57.289Z",
   "modules": [
     {
       "uid": "learn-dynamics.get-started-shopify-dynamics-365-business-central",
@@ -3748,6 +3748,19 @@
         "business-user",
         "functional-consultant"
       ]
+    },
+    {
+      "uid": "learn-dynamics.assess-business-central-architecture",
+      "title": "Assess the Business Central architecture",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/assess-business-central-architecture/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 49,
+      "levels": [
+        "intermediate"
+      ],
+      "roles": [
+        "developer"
+      ]
     }
   ],
   "learningPaths": [
@@ -3853,7 +3866,7 @@
     },
     {
       "uid": "learn-dynamics.set-up-jobs-resources",
-      "title": "Impostazione di progetti e risorse in Microsoft Dynamics 365 Business Central",
+      "title": "Impostazione di progetti e risorse in Microsoft archiviazione su disco",
       "type": "learningPath",
       "url": "https://learn.microsoft.com/it-it/training/paths/set-up-jobs-resources/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 150,
