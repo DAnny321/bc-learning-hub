@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-09T11:13:57.289Z",
+  "syncedAt": "2026-11-16T10:54:07.251Z",
   "modules": [
     {
       "uid": "learn-dynamics.get-started-shopify-dynamics-365-business-central",
@@ -372,6 +372,19 @@
         "student",
         "business-user",
         "maker"
+      ]
+    },
+    {
+      "uid": "learn-dynamics.manage-analyze-telemetry",
+      "title": "Gestire e analizzare i dati di telemetria di Business Central",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/manage-analyze-telemetry/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 76,
+      "levels": [
+        "advanced"
+      ],
+      "roles": [
+        "developer"
       ]
     },
     {
@@ -1307,6 +1320,19 @@
       ]
     },
     {
+      "uid": "learn.wwl.extend-business-central-using-al",
+      "title": "Estendere Business Central tramite AL",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/extend-using-application-language/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 63,
+      "levels": [
+        "advanced"
+      ],
+      "roles": [
+        "developer"
+      ]
+    },
+    {
       "uid": "learn-dynamics.explore-job-wip-methods",
       "title": "Esplorazione dei metodi WIP progetto in Dynamics 365 Business Central",
       "type": "module",
@@ -1715,6 +1741,19 @@
       ]
     },
     {
+      "uid": "learn-dynamics.access-external-rest-services",
+      "title": "Accedere ai servizi REST esterni da Business Central",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/access-external-rest-services/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 87,
+      "levels": [
+        "advanced"
+      ],
+      "roles": [
+        "developer"
+      ]
+    },
+    {
       "uid": "learn-dynamics.customize-ui-experience",
       "title": "Personalizzazione dell'esperienza dell'interfaccia utente in Dynamics 365 Business Central",
       "type": "module",
@@ -2016,6 +2055,19 @@
       ]
     },
     {
+      "uid": "learn-dynamics.business-central.implement-application-programming-interfaces",
+      "title": "Implementare le API Business Central tramite AL",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/implement-application-programming-interfaces/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 56,
+      "levels": [
+        "intermediate"
+      ],
+      "roles": [
+        "developer"
+      ]
+    },
+    {
       "uid": "learn.wwl.challenge-manage-customers-business-central",
       "title": "Progetto di richiesta di verifica - Gestione dei clienti in Business Central",
       "type": "module",
@@ -2165,6 +2217,19 @@
       "roles": [
         "business-user",
         "functional-consultant"
+      ]
+    },
+    {
+      "uid": "learn.wwl.customize-business-central-ui-implement-onboarding",
+      "title": "Personalizzare l'interfaccia utente Business Central e implementare l'onboarding",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/customize-interface-implement-onboarding/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 58,
+      "levels": [
+        "advanced"
+      ],
+      "roles": [
+        "developer"
       ]
     },
     {
@@ -2689,6 +2754,19 @@
       "roles": [
         "administrator",
         "functional-consultant"
+      ]
+    },
+    {
+      "uid": "learn.wwl.implement-essential-business-central-development-standards",
+      "title": "Implementare standard di sviluppo Business Central essenziali",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/implement-essential-development-standards/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 63,
+      "levels": [
+        "advanced"
+      ],
+      "roles": [
+        "developer"
       ]
     },
     {
@@ -3750,11 +3828,76 @@
       ]
     },
     {
+      "uid": "learn-dynamics.build-extend-business-central-tables-pages",
+      "title": "Build and extend Business Central tables and pages",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/build-extend-business-central-tables-pages/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 50,
+      "levels": [
+        "advanced"
+      ],
+      "roles": [
+        "developer"
+      ]
+    },
+    {
+      "uid": "learn-dynamics.analyze-business-central-apps",
+      "title": "Analyze Business Central apps",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/analyze-business-central-apps/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 57,
+      "levels": [
+        "intermediate"
+      ],
+      "roles": [
+        "developer"
+      ]
+    },
+    {
       "uid": "learn-dynamics.assess-business-central-architecture",
       "title": "Assess the Business Central architecture",
       "type": "module",
       "url": "https://learn.microsoft.com/it-it/training/modules/assess-business-central-architecture/?WT.mc_id=api_CatalogApi",
       "durationMinutes": 49,
+      "levels": [
+        "intermediate"
+      ],
+      "roles": [
+        "developer"
+      ]
+    },
+    {
+      "uid": "learn-dynamics.create-debug-deploy-business-central-extension",
+      "title": "Create, debug, and deploy a Business Central extension",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/create-debug-deploy-business-central-extension/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 64,
+      "levels": [
+        "intermediate"
+      ],
+      "roles": [
+        "developer"
+      ]
+    },
+    {
+      "uid": "learn-dynamics.create-manage-queries",
+      "title": "Create and manage queries in Business Central",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/create-manage-queries/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 59,
+      "levels": [
+        "advanced"
+      ],
+      "roles": [
+        "developer"
+      ]
+    },
+    {
+      "uid": "learn-dynamics.configure-manage-business-central-development-environment",
+      "title": "Configure and manage a Business Central development environment",
+      "type": "module",
+      "url": "https://learn.microsoft.com/it-it/training/modules/configure-manage-business-central-development-environment/?WT.mc_id=api_CatalogApi",
+      "durationMinutes": 63,
       "levels": [
         "intermediate"
       ],
